@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kirill_dmitrijev11.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+
+                <Frame x:Name="odin" HorizontalOptions="Center" Padding="10,15,50,40" BackgroundColor="#615B5B" Margin="0,20,0,-25"/>
+            <Frame x:Name="odin1" HorizontalOptions="Center" Padding="40,-31,50,40" BackgroundColor="#615B5B" Margin="0,20,0,-25">
+             
+            </Frame>
+
+            <Frame x:Name="dva" CornerRadius="120" HorizontalOptions="Center" Padding="50" BackgroundColor="Aqua" Margin="0,20,0,-24"/>
+
+
+            <Frame x:Name="tri" CornerRadius="120" HorizontalOptions="Center" Padding="80" BackgroundColor="Aqua"/>
+            <Frame x:Name="tri1" CornerRadius="120" HorizontalOptions="Center" Padding="100" BackgroundColor="Aqua" Margin="0,-30,0,5"/>
+
+            <Label Text="Сейчас он растает" HorizontalTextAlignment="Center" x:Name="oni" IsVisible="false" />
+            <Label Text="Сейчас ено слепят" HorizontalTextAlignment="Center" x:Name="a" IsVisible="false"/>
+            <Label Text="разукрасим его" HorizontalTextAlignment="Center" x:Name="s"  IsVisible="false" />
+            <Label Text="красиво растаит" HorizontalTextAlignment="Center" x:Name="d" IsVisible="false"/>
+            <Label Text="стал квадратным" HorizontalTextAlignment="Center" x:Name="f" IsVisible="false" />
+
+            <Button Text="ТАЯТЬ"
+                x:Name="on"
+                Clicked="on_Clicked"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="слепить"
+             x:Name="off"
+             Padding="0,-10,0,0"
+             Margin="0,-50"
+             Clicked="off_Clicked"
+            HorizontalOptions="Center"/>
+            <Button Text="random"
+             x:Name="random"
+             HorizontalOptions="End"
+             Padding="0,-5,0,0"
+             Margin="0,-5"
+             Clicked="random_Clicked" />
+            <Button Text="кРУТО ТАЯТЬ"
+                x:Name="on1"
+                Clicked="on1_Clicked"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="LOL" 
+             x:Name="lol"
+             HorizontalOptions="Center"
+             Padding="0,-5,0,0"
+             Margin="0,-48"
+             Clicked="lol_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
