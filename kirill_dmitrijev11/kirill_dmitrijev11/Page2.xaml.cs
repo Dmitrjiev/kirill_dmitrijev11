@@ -23,14 +23,14 @@ namespace kirill_dmitrijev11
 
         private void on_Clicked(object sender, EventArgs e)
         {
-            a
+         
         }
 
         public Page2()
         {
             AbsoluteLayout abs = new AbsoluteLayout();
             golova = new Xamarin.Forms.BoxView { Color = Color.AliceBlue, CornerRadius = 100 };
-            AbsoluteLayout.SetLayoutBounds(golova, new Rectangle(0.5, 0.3, 70, 70));
+            AbsoluteLayout.SetLayoutBounds(golova, new Rectangle(0.5, 0.31, 70, 70));
             AbsoluteLayout.SetLayoutFlags(golova, AbsoluteLayoutFlags.PositionProportional);
 
             akrug = new Xamarin.Forms.BoxView { Color = Color.AliceBlue, CornerRadius = 100 };
