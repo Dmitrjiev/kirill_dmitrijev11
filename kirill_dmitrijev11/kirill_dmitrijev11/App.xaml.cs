@@ -10,7 +10,7 @@ namespace kirill_dmitrijev11
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new Page2();
         }
 
         protected override void OnStart()
