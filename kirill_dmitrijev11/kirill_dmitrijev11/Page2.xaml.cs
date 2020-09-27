@@ -16,14 +16,61 @@ namespace kirill_dmitrijev11
     {
         Xamarin.Forms.BoxView golova, akrug, bkrug, asljapa, bsljapa, glaz, glaza, morkovka, apugovka, bpugovka, cpugovka, ruk, ruki;
 
+        Random rnd = new Random();
+        private async void colorii_Clicked(object sender, EventArgs e)
+        {
+            int r = rnd.Next(0, 255);
+            int g = rnd.Next(0, 255);
+            int b = rnd.Next(0, 255);
+            bool vastus = await DisplayAlert("Värvi muutus",
+                            "зочешь изменить на цвет? красный:"
+                            + r.ToString() + " зелный:" + g.ToString() + " синий:" + b.ToString(),
+                            "Jah", "Ei");
+            if (vastus)
+
+            {
+                golova.BackgroundColor = Color.FromRgb(r, g, b);
+                akrug.BackgroundColor = Color.FromRgb(r, g, b);
+                bkrug.BackgroundColor = Color.FromRgb(r, g, b);
+            }
+            else
+            {
+                golova.BackgroundColor = Color.FromRgb(0, 0, 0);
+                akrug.BackgroundColor = Color.FromRgb(0, 0, 0);
+                bkrug.BackgroundColor = Color.FromRgb(0, 0, 0);
+            }
+        }
+
         private void off_Clicked(object sender, EventArgs e)
         {
-        golova= 
+            golova.Opacity = 0;
+            akrug.Opacity = 0;
+            bkrug.Opacity = 0;
+            asljapa.Opacity = 0;
+            bsljapa.Opacity = 0;
+            glaza.Opacity = 0;
+            morkovka.Opacity = 0;
+            apugovka.Opacity = 0;
+            bpugovka.Opacity = 0;
+            cpugovka.Opacity = 0;
+            ruk.Opacity = 0;
+            ruki.Opacity = 0;
         }
 
         private void on_Clicked(object sender, EventArgs e)
         {
-         
+            golova.Opacity = 1;
+            akrug.Opacity = 1;
+            bkrug.Opacity = 1;
+            asljapa.Opacity = 1;
+            bsljapa.Opacity = 1;
+            glaza.Opacity = 1;
+            morkovka.Opacity = 1;
+            apugovka.Opacity = 1;
+            bpugovka.Opacity = 1;
+            cpugovka.Opacity = 1;
+            ruk.Opacity = 1;
+            ruki.Opacity = 1;
         }
 
         public Page2()
