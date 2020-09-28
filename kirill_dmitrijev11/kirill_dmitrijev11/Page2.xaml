@@ -3,16 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="kirill_dmitrijev11.Page2">
     <ContentPage.Content>
-    <AbsoluteLayout>
-            <Button Text="Растаять"
-         x:Name="on"
-         Clicked="on_Clicked"/>
-            <Button Text="слепить"
-         x:Name="off"
-         Clicked="off_Clicked" Margin="100,0,0,0"/>
-        <Button Text="Цвет"
-                x:Name="colorii"
-                Clicked="colorii_Clicked"
+        <AbsoluteLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
